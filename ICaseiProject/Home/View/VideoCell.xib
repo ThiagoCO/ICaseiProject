@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="346" id="KGk-i7-Jjw" customClass="VideoCell" customModule="ICaseiProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="346"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="364" height="345.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2bW-Mo-Ag9">
+                        <rect key="frame" x="16" y="11" width="332" height="172"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="172" id="bP3-Aw-spC"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título do vídeo 01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdR-UW-biW">
+                        <rect key="frame" x="18" y="197" width="330" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do canal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zh5-0A-lus">
+                        <rect key="frame" x="20" y="226" width="79" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="clip" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgB-1K-xV6">
+                        <rect key="frame" x="19" y="248" width="328" height="67"/>
+                        <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zh5-0A-lus" firstAttribute="top" secondItem="jdR-UW-biW" secondAttribute="bottom" constant="8" id="2hr-hJ-cwl"/>
+                    <constraint firstItem="jdR-UW-biW" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="5mS-wc-avh"/>
+                    <constraint firstItem="2bW-Mo-Ag9" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="D81-uL-xgl"/>
+                    <constraint firstItem="2bW-Mo-Ag9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="IoO-W2-cu7"/>
+                    <constraint firstItem="vgB-1K-xV6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="3" id="LhK-vv-h5S"/>
+                    <constraint firstItem="jdR-UW-biW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="afr-bb-Eho"/>
+                    <constraint firstItem="jdR-UW-biW" firstAttribute="top" secondItem="2bW-Mo-Ag9" secondAttribute="bottom" constant="14" id="dL3-3b-c0b"/>
+                    <constraint firstItem="zh5-0A-lus" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="hEH-b6-LPL"/>
+                    <constraint firstItem="vgB-1K-xV6" firstAttribute="top" secondItem="zh5-0A-lus" secondAttribute="bottom" constant="8" id="rnH-11-Zlg"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="vgB-1K-xV6" secondAttribute="trailing" constant="1" id="ypl-pg-jkJ"/>
+                    <constraint firstItem="2bW-Mo-Ag9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="ze4-TK-Uzj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="channelLabel" destination="zh5-0A-lus" id="Aok-mK-9OV"/>
+                <outlet property="descriptionLabel" destination="vgB-1K-xV6" id="G3c-Jp-5X1"/>
+                <outlet property="titleLabel" destination="jdR-UW-biW" id="Mee-w8-Vm0"/>
+                <outlet property="videoImage" destination="2bW-Mo-Ag9" id="qBK-kh-NZt"/>
+            </connections>
+            <point key="canvasLocation" x="88" y="184.40779610194903"/>
+        </tableViewCell>
+    </objects>
+</document>
