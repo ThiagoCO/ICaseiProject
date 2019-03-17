@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class VideoCell: UITableViewCell {
 
@@ -16,15 +17,14 @@ class VideoCell: UITableViewCell {
     @IBOutlet weak var descriptionLabel: UILabel!
     
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func configure(video: VideoDetail?) {
+        if let videoDetail = video {
+            titleLabel.text = videoDetail.title
+            channelLabel.text = videoDetail.channelTitle
+            descriptionLabel.text = videoDetail.description
+            videoImage.sd_setImage(with: videoDetail.thumbnails.image.url, completed: nil)
+        }
+      
     }
     
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D3B10E6223EAC3900818AAA /* VideoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B10E5223EAC3900818AAA /* VideoDetailViewModel.swift */; };
+		2D3B10E8223EAC8400818AAA /* VideoDetailViewController+DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B10E7223EAC8400818AAA /* VideoDetailViewController+DetailView.swift */; };
 		2D939CD122386A7D0067DA1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D939CD022386A7D0067DA1B /* AppDelegate.swift */; };
 		2D939CD622386A7D0067DA1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D939CD422386A7D0067DA1B /* Main.storyboard */; };
 		2D939CD922386A7D0067DA1B /* ICaseiProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D939CD722386A7D0067DA1B /* ICaseiProject.xcdatamodeld */; };
@@ -20,6 +22,10 @@
 		2D939D0F223897480067DA1B /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D939D0D223897480067DA1B /* VideoCell.xib */; };
 		2D939D122239B0AE0067DA1B /* HomeViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D939D112239B0AE0067DA1B /* HomeViewController+TableView.swift */; };
 		2D939D152239B3C30067DA1B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D939D142239B3C30067DA1B /* APIManager.swift */; };
+		2DBE718F2239CA8B0014B1E7 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBE718E2239CA8B0014B1E7 /* Video.swift */; };
+		2DBE71952239DEE10014B1E7 /* HomeViewController+HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBE71942239DEE10014B1E7 /* HomeViewController+HomeView.swift */; };
+		2DCD3A79223DCAAE00BE124B /* VideoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD3A78223DCAAE00BE124B /* VideoDetailViewController.swift */; };
+		2DCD3A7A223DCB8600BE124B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBE71922239DDDB0014B1E7 /* HomeViewModel.swift */; };
 		413DB892E08EFC7D99F9CD90 /* Pods_ICaseiProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EC7908926F87E4DBA58083 /* Pods_ICaseiProjectUITests.framework */; };
 		56D4E199D41C0AFCFA5DFA51 /* Pods_ICaseiProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F4D4CD0CE6BA340E2EEAF50 /* Pods_ICaseiProjectTests.framework */; };
 		5C64D20105840BD1676E2B06 /* Pods_ICaseiProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1125BA9D3FCED6E9211A8746 /* Pods_ICaseiProject.framework */; };
@@ -45,6 +51,8 @@
 /* Begin PBXFileReference section */
 		1125BA9D3FCED6E9211A8746 /* Pods_ICaseiProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ICaseiProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		145DE3FA101804240FF74B75 /* Pods-ICaseiProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICaseiProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ICaseiProjectTests/Pods-ICaseiProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D3B10E5223EAC3900818AAA /* VideoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailViewModel.swift; sourceTree = "<group>"; };
+		2D3B10E7223EAC8400818AAA /* VideoDetailViewController+DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoDetailViewController+DetailView.swift"; sourceTree = "<group>"; };
 		2D939CCD22386A7D0067DA1B /* ICaseiProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICaseiProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D939CD022386A7D0067DA1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D939CD522386A7D0067DA1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,6 +72,10 @@
 		2D939D0D223897480067DA1B /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
 		2D939D112239B0AE0067DA1B /* HomeViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+TableView.swift"; sourceTree = "<group>"; };
 		2D939D142239B3C30067DA1B /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		2DBE718E2239CA8B0014B1E7 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		2DBE71922239DDDB0014B1E7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		2DBE71942239DEE10014B1E7 /* HomeViewController+HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+HomeView.swift"; sourceTree = "<group>"; };
+		2DCD3A78223DCAAE00BE124B /* VideoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailViewController.swift; sourceTree = "<group>"; };
 		35515880D4236AE95F4CA953 /* Pods-ICaseiProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICaseiProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ICaseiProjectUITests/Pods-ICaseiProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		45EC7908926F87E4DBA58083 /* Pods_ICaseiProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ICaseiProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F4D4CD0CE6BA340E2EEAF50 /* Pods_ICaseiProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ICaseiProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,8 +148,11 @@
 		2D939CCF22386A7D0067DA1B /* ICaseiProject */ = {
 			isa = PBXGroup;
 			children = (
+				2DCD3A77223DCA4400BE124B /* Model */,
+				2D939D0422386E050067DA1B /* ViewControllers */,
+				2D939D102239B06D0067DA1B /* View */,
 				2D939D132239B3B50067DA1B /* Services */,
-				2D939D0122386D930067DA1B /* Home */,
+				2D939D0122386D930067DA1B /* ViewModels */,
 				2D939CD022386A7D0067DA1B /* AppDelegate.swift */,
 				2D939D0A223880E60067DA1B /* SearchTextField.swift */,
 				2D939CD422386A7D0067DA1B /* Main.storyboard */,
@@ -167,13 +182,13 @@
 			path = ICaseiProjectUITests;
 			sourceTree = "<group>";
 		};
-		2D939D0122386D930067DA1B /* Home */ = {
+		2D939D0122386D930067DA1B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				2D939D102239B06D0067DA1B /* View */,
-				2D939D0422386E050067DA1B /* ViewControllers */,
+				2DBE71922239DDDB0014B1E7 /* HomeViewModel.swift */,
+				2D3B10E5223EAC3900818AAA /* VideoDetailViewModel.swift */,
 			);
-			path = Home;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		2D939D0422386E050067DA1B /* ViewControllers */ = {
@@ -181,6 +196,9 @@
 			children = (
 				2D939D0522386E330067DA1B /* HomeViewController.swift */,
 				2D939D112239B0AE0067DA1B /* HomeViewController+TableView.swift */,
+				2DBE71942239DEE10014B1E7 /* HomeViewController+HomeView.swift */,
+				2DCD3A78223DCAAE00BE124B /* VideoDetailViewController.swift */,
+				2D3B10E7223EAC8400818AAA /* VideoDetailViewController+DetailView.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -200,6 +218,14 @@
 				2D939D142239B3C30067DA1B /* APIManager.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		2DCD3A77223DCA4400BE124B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2DBE718E2239CA8B0014B1E7 /* Video.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		59B592A68ECABE9301F4D1CC /* Pods */ = {
@@ -445,12 +471,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D939D0E223897480067DA1B /* VideoCell.swift in Sources */,
+				2DCD3A7A223DCB8600BE124B /* HomeViewModel.swift in Sources */,
 				2D939CD922386A7D0067DA1B /* ICaseiProject.xcdatamodeld in Sources */,
+				2D3B10E6223EAC3900818AAA /* VideoDetailViewModel.swift in Sources */,
+				2D3B10E8223EAC8400818AAA /* VideoDetailViewController+DetailView.swift in Sources */,
+				2DBE71952239DEE10014B1E7 /* HomeViewController+HomeView.swift in Sources */,
 				2D939CD122386A7D0067DA1B /* AppDelegate.swift in Sources */,
 				2D939D122239B0AE0067DA1B /* HomeViewController+TableView.swift in Sources */,
 				2D939D0B223880E60067DA1B /* SearchTextField.swift in Sources */,
+				2DBE718F2239CA8B0014B1E7 /* Video.swift in Sources */,
 				2D939D0622386E330067DA1B /* HomeViewController.swift in Sources */,
 				2D939D152239B3C30067DA1B /* APIManager.swift in Sources */,
+				2DCD3A79223DCAAE00BE124B /* VideoDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
