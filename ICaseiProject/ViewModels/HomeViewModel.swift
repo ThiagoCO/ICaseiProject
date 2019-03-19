@@ -32,9 +32,12 @@ class HomeViewModel {
                     }
                 }
             }
-            else {
+            else if(self.nextPage == nil && videoList?.items?.count != nil) {
                 self.videoList = videoList?.items
                 self.view.createTable()
+            }
+            else {
+                self.view.viewAlertMessage()
             }
             self.nextPage = videoList?.nextPageToken
             self.searchText = textSearch
@@ -43,7 +46,6 @@ class HomeViewModel {
             
         }
     }
-    
     
     func getNextVideos(index:Int) {
         if(nextPage != nil && videoList?.count == (index + 1))

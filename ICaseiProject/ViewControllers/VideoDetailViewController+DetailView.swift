@@ -29,8 +29,9 @@ extension VideoDetailViewController: DetailView {
         titleLabel.text = video.snippet.title
         imageVideo.image = image
         channelLabel.text = video.snippet.channelTitle
-        likeLabel.text = videoStatistics.items[0].statistics.likeCount
-        dislikeLabel.text = videoStatistics.items[0].statistics.dislikeCount
-        viewsLabel.text = videoStatistics.items[0].statistics.viewCount        
+        likeLabel.text = videoStatistics.items[0].statistics.likeCount.formatNumber()
+        dislikeLabel.text = videoStatistics.items[0].statistics.dislikeCount.formatNumber()
+        viewsLabel.text =  videoStatistics.items[0].statistics.viewCount.formatNumber()
+        descriptionTextArea.text = video.snippet.description
     }
 }

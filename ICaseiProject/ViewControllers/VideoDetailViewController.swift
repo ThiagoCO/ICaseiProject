@@ -22,10 +22,17 @@ class VideoDetailViewController: UIViewController {
     var video: Video?
     var image: UIImage?
     var activityIndicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.gray)
+    var viewModel: VideoDetailViewModel?
 
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.imageVideo.image = image
+        viewModel = VideoDetailViewModel(view: self, video: video)
+    }
+    
+    @IBAction func backVideoDetail(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
 }

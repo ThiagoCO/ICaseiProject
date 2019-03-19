@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D1C74062240568100B1AF3B /* CustomTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C74052240568100B1AF3B /* CustomTypes.swift */; };
+		2D1C7408224073D700B1AF3B /* EmptyStateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D1C7407224073D700B1AF3B /* EmptyStateView.xib */; };
+		2D1C740A2240740000B1AF3B /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C74092240740000B1AF3B /* EmptyStateView.swift */; };
 		2D3B10E6223EAC3900818AAA /* VideoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B10E5223EAC3900818AAA /* VideoDetailViewModel.swift */; };
 		2D3B10E8223EAC8400818AAA /* VideoDetailViewController+DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B10E7223EAC8400818AAA /* VideoDetailViewController+DetailView.swift */; };
 		2D939CD122386A7D0067DA1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D939CD022386A7D0067DA1B /* AppDelegate.swift */; };
 		2D939CD622386A7D0067DA1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D939CD422386A7D0067DA1B /* Main.storyboard */; };
-		2D939CD922386A7D0067DA1B /* ICaseiProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D939CD722386A7D0067DA1B /* ICaseiProject.xcdatamodeld */; };
 		2D939CDB22386A7E0067DA1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D939CDA22386A7E0067DA1B /* Assets.xcassets */; };
 		2D939CDE22386A7E0067DA1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D939CDC22386A7E0067DA1B /* LaunchScreen.storyboard */; };
 		2D939CE922386A7F0067DA1B /* ICaseiProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D939CE822386A7F0067DA1B /* ICaseiProjectTests.swift */; };
@@ -51,12 +53,14 @@
 /* Begin PBXFileReference section */
 		1125BA9D3FCED6E9211A8746 /* Pods_ICaseiProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ICaseiProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		145DE3FA101804240FF74B75 /* Pods-ICaseiProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICaseiProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ICaseiProjectTests/Pods-ICaseiProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D1C74052240568100B1AF3B /* CustomTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTypes.swift; sourceTree = "<group>"; };
+		2D1C7407224073D700B1AF3B /* EmptyStateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyStateView.xib; sourceTree = "<group>"; };
+		2D1C74092240740000B1AF3B /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		2D3B10E5223EAC3900818AAA /* VideoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailViewModel.swift; sourceTree = "<group>"; };
 		2D3B10E7223EAC8400818AAA /* VideoDetailViewController+DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoDetailViewController+DetailView.swift"; sourceTree = "<group>"; };
 		2D939CCD22386A7D0067DA1B /* ICaseiProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICaseiProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D939CD022386A7D0067DA1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D939CD522386A7D0067DA1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2D939CD822386A7D0067DA1B /* ICaseiProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ICaseiProject.xcdatamodel; sourceTree = "<group>"; };
 		2D939CDA22386A7E0067DA1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D939CDD22386A7E0067DA1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D939CDF22386A7E0067DA1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -123,6 +127,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2D1C7402224032C200B1AF3B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D939CD022386A7D0067DA1B /* AppDelegate.swift */,
+				2D939CDA22386A7E0067DA1B /* Assets.xcassets */,
+				2D939CDF22386A7E0067DA1B /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2D1C74032240331A00B1AF3B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2D939CD422386A7D0067DA1B /* Main.storyboard */,
+				2D939CDC22386A7E0067DA1B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2D1C74042240553E00B1AF3B /* Customs */ = {
+			isa = PBXGroup;
+			children = (
+				2D939D0A223880E60067DA1B /* SearchTextField.swift */,
+				2D1C74052240568100B1AF3B /* CustomTypes.swift */,
+			);
+			path = Customs;
+			sourceTree = "<group>";
+		};
 		2D939CC422386A7D0067DA1B = {
 			isa = PBXGroup;
 			children = (
@@ -148,18 +180,14 @@
 		2D939CCF22386A7D0067DA1B /* ICaseiProject */ = {
 			isa = PBXGroup;
 			children = (
-				2DCD3A77223DCA4400BE124B /* Model */,
+				2D1C74042240553E00B1AF3B /* Customs */,
+				2DCD3A77223DCA4400BE124B /* Models */,
 				2D939D0422386E050067DA1B /* ViewControllers */,
 				2D939D102239B06D0067DA1B /* View */,
 				2D939D132239B3B50067DA1B /* Services */,
 				2D939D0122386D930067DA1B /* ViewModels */,
-				2D939CD022386A7D0067DA1B /* AppDelegate.swift */,
-				2D939D0A223880E60067DA1B /* SearchTextField.swift */,
-				2D939CD422386A7D0067DA1B /* Main.storyboard */,
-				2D939CDA22386A7E0067DA1B /* Assets.xcassets */,
-				2D939CDC22386A7E0067DA1B /* LaunchScreen.storyboard */,
-				2D939CDF22386A7E0067DA1B /* Info.plist */,
-				2D939CD722386A7D0067DA1B /* ICaseiProject.xcdatamodeld */,
+				2D1C74032240331A00B1AF3B /* Storyboards */,
+				2D1C7402224032C200B1AF3B /* Supporting Files */,
 			);
 			path = ICaseiProject;
 			sourceTree = "<group>";
@@ -208,6 +236,8 @@
 			children = (
 				2D939D0C223897480067DA1B /* VideoCell.swift */,
 				2D939D0D223897480067DA1B /* VideoCell.xib */,
+				2D1C7407224073D700B1AF3B /* EmptyStateView.xib */,
+				2D1C74092240740000B1AF3B /* EmptyStateView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -220,12 +250,12 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		2DCD3A77223DCA4400BE124B /* Model */ = {
+		2DCD3A77223DCA4400BE124B /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				2DBE718E2239CA8B0014B1E7 /* Video.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		59B592A68ECABE9301F4D1CC /* Pods */ = {
@@ -350,6 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D939CDE22386A7E0067DA1B /* LaunchScreen.storyboard in Resources */,
+				2D1C7408224073D700B1AF3B /* EmptyStateView.xib in Resources */,
 				2D939D0F223897480067DA1B /* VideoCell.xib in Resources */,
 				2D939CDB22386A7E0067DA1B /* Assets.xcassets in Resources */,
 				2D939CD622386A7D0067DA1B /* Main.storyboard in Resources */,
@@ -470,9 +501,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D1C74062240568100B1AF3B /* CustomTypes.swift in Sources */,
 				2D939D0E223897480067DA1B /* VideoCell.swift in Sources */,
 				2DCD3A7A223DCB8600BE124B /* HomeViewModel.swift in Sources */,
-				2D939CD922386A7D0067DA1B /* ICaseiProject.xcdatamodeld in Sources */,
 				2D3B10E6223EAC3900818AAA /* VideoDetailViewModel.swift in Sources */,
 				2D3B10E8223EAC8400818AAA /* VideoDetailViewController+DetailView.swift in Sources */,
 				2DBE71952239DEE10014B1E7 /* HomeViewController+HomeView.swift in Sources */,
@@ -481,6 +512,7 @@
 				2D939D0B223880E60067DA1B /* SearchTextField.swift in Sources */,
 				2DBE718F2239CA8B0014B1E7 /* Video.swift in Sources */,
 				2D939D0622386E330067DA1B /* HomeViewController.swift in Sources */,
+				2D1C740A2240740000B1AF3B /* EmptyStateView.swift in Sources */,
 				2D939D152239B3C30067DA1B /* APIManager.swift in Sources */,
 				2DCD3A79223DCAAE00BE124B /* VideoDetailViewController.swift in Sources */,
 			);
@@ -658,15 +690,17 @@
 			baseConfigurationReference = 9A65C673E383B8ADE32909BF /* Pods-ICaseiProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M8UJX898RF;
-				INFOPLIST_FILE = ICaseiProject/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/ICaseiProject/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.alura.ICaseiProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -677,15 +711,17 @@
 			baseConfigurationReference = 53FDE3894FEFCEAC60060899 /* Pods-ICaseiProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M8UJX898RF;
-				INFOPLIST_FILE = ICaseiProject/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/ICaseiProject/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.alura.ICaseiProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -817,19 +853,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		2D939CD722386A7D0067DA1B /* ICaseiProject.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				2D939CD822386A7D0067DA1B /* ICaseiProject.xcdatamodel */,
-			);
-			currentVersion = 2D939CD822386A7D0067DA1B /* ICaseiProject.xcdatamodel */;
-			path = ICaseiProject.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 2D939CC522386A7D0067DA1B /* Project object */;
 }

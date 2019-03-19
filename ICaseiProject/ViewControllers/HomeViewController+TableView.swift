@@ -17,27 +17,24 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel?.videoList?.count ?? 0
-        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "VideoCell", for: indexPath) as! VideoCell
         
         cell.configure(video: viewModel?.videoList?[indexPath.row].snippet)
-        tableView.rowHeight = cell.frame.height
         return cell
-        
     }
     
     func createTableView() {
         tableView = UITableView()
         tableView.alpha = 0
         view.addSubview(tableView)
-        
-        tableView.backgroundColor = .red
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        
         tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         tableView.topAnchor.constraint(equalTo: searchTextField.bottomAnchor, constant: 20).isActive = true
@@ -62,7 +59,7 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
          if let controller = self.storyboard?.instantiateViewController(withIdentifier: "detail") as? VideoDetailViewController {
             
             controller.video = viewModel?.videoList?[indexPath.row]
-            
+            controller.image = (tableView.cellForRow(at: indexPath) as! VideoCell).videoImage.image
             present(controller, animated: true, completion: nil)
         }
         

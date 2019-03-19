@@ -16,17 +16,11 @@ class HomeViewController: UIViewController , UITextFieldDelegate{
     var activityIndicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.gray)
     var viewModel: HomeViewModel?
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         viewModel = HomeViewModel(view: self)
-        
         searchTextField.addTarget(self, action: #selector(editingDidEnd), for: .primaryActionTriggered)
-        
-
     }
-    
     
     @objc func editingDidEnd(_ sender: UITextField) {
         animateSearchField()
@@ -34,10 +28,7 @@ class HomeViewController: UIViewController , UITextFieldDelegate{
         viewModel?.videoList = nil
         viewModel?.getVideoList(textSearch: sender.text)
         sender.resignFirstResponder()
-        
     }
-    
-    
     
     func animateSearchField() {
         centerVerticalConstraint?.isActive = false
@@ -46,8 +37,6 @@ class HomeViewController: UIViewController , UITextFieldDelegate{
         UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseIn, animations: {
             self.view.layoutIfNeeded()
         }, completion: nil)
-
     }
-    
 }
 

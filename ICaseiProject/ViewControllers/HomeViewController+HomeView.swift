@@ -13,6 +13,7 @@ protocol HomeView {
     func stopLoad()
     func startLoad()
     func reloadTableView()
+    func viewAlertMessage()
 }
 
 extension HomeViewController: HomeView {
@@ -32,9 +33,18 @@ extension HomeViewController: HomeView {
     }
     
     func reloadTableView() {
-        tableView.reloadData()
+        tableView?.reloadData()
     }
     
-  
+    func viewAlertMessage() {
+        tableView?.isHidden = true
+        let viewBad = EmptyStateView()
+        view.addSubview(viewBad)
+        viewBad.translatesAutoresizingMaskIntoConstraints = false
+        viewBad.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        viewBad.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        viewBad.topAnchor.constraint(equalTo: searchTextField.bottomAnchor, constant:
+            20).isActive = true
+    }
    
 }

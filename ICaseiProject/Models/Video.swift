@@ -9,7 +9,6 @@
 import Foundation
 
 struct VideoList: Codable {
-    
     var nextPageToken: String
     var items: [Video]?
 }
@@ -17,7 +16,6 @@ struct VideoList: Codable {
 struct Video : Codable {
     var id: VideoId
     var snippet: VideoDetail
-    
 }
 
 struct VideoId: Codable {
@@ -32,12 +30,9 @@ struct VideoDetail: Codable{
 }
 
 struct Thumbnails: Codable {
-    
     enum CodingKeys: String, CodingKey {
-     
         case image = "high"
     }
-    
     var image: Thumbnail
 }
 
